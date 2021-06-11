@@ -1,2 +1,3 @@
-# atlas4-ts
-Circuit Map Creation Library
+# Atlas4 TypeScript + React
+
+Atlas4 Network Map Creating Library
