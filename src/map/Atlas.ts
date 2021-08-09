@@ -1,6 +1,6 @@
-import L, { Map } from "leaflet";
+import { Map, map as LeafletMap } from "leaflet";
 import "../../node_modules/leaflet/dist/leaflet.css";
-import { AtlasOptions, TileOptions } from "../data/atlas/AtlasOptions";
+import { AtlasOptions, TileOptions } from "../types/atlas/AtlasOptions";
 import { Tile } from "./Tile";
 export default class Atlas {
     readonly container: string;
@@ -21,7 +21,7 @@ export default class Atlas {
 
     // Creates a leaflet map when the constructor is called
     private initializeMap(): Map {
-        let map = L.map(this.container, this.options.leaflet);
+        let map = LeafletMap(this.container, this.options.leaflet);
         return map;
     }
 
@@ -63,7 +63,7 @@ export default class Atlas {
             selectedTiles[0].show();
             return true;
         } else {
-            return false;
+            return false ;
         }
     }
 

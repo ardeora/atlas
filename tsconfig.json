@@ -39,7 +39,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
 		"typeRoots": [
-			"./src/types"
+			"./src/types/*"
 		],
 		// Ensure that .d.ts files are created by tsc, but not .js files
 		//   "declaration": true,

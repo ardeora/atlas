@@ -1,10 +1,10 @@
-import L, { Map } from "leaflet";
-import { TileOptions } from "../data/atlas/AtlasOptions";
+import  { Map, TileLayer, tileLayer } from "leaflet";
+import { TileOptions } from "../types/atlas/AtlasOptions";
 
 export class Tile {
     private config: TileOptions;
     private map: Map;
-    private leafletLayer: L.TileLayer | undefined;
+    private leafletLayer: TileLayer | undefined;
 
     readonly name: string;
     readonly default: boolean;
@@ -22,9 +22,9 @@ export class Tile {
     }
 
     // Create Leaflet Tile Layer
-    private createTile(): L.TileLayer {
+    private createTile(): TileLayer {
         let urlString = this.createTileURL();
-        return L.tileLayer(urlString, this.config);
+        return tileLayer(urlString, this.config);
     }
 
     // Appends the access token to the url string provided in the config

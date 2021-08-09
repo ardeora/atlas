@@ -35,6 +35,6 @@ module.exports = {
         filename: output,
         library: library,
         libraryTarget: "umd",
-        umdNamedDefine: true,
+        umdNamedDefine: true
     },
 };
