@@ -1,3 +1,3 @@
-# Atlas4 TypeScript + React
+# Atlas
 
-Atlas4 Network Map Creating Library
+Atlas Map Topology Data Mapping Library
