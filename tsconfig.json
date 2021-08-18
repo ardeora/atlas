@@ -29,13 +29,6 @@
 		"module": "es6",
 		"removeComments": true,
 		"alwaysStrict": true,
-		"allowUnreachableCode": false,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
 		"typeRoots": [

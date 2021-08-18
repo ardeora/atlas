@@ -1,1 +1,1 @@
-module.exports = require("./map/Atlas").default;
+module.exports = require('./map/Atlas').default;
